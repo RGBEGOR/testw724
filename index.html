@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технические тесты</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Проверочные тесты</h1>
+        <p>Для самастоятельной проверки знаний и закрепления пройденной темы</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - Определите годы Столетней войны:</h3>
+            <label>
+                <input type="radio"  value="1"  name="p0" onclick="respuesta(0,this)"> 1337-1453/56
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p0" onclick="respuesta(0,this)"> 1336-1456
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p0" onclick="respuesta(0,this)"> 1137-1402
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 Первый период Столетней войны завершился: </h3>
+            <label>
+                <input type="radio"  value="1"  name="p1" onclick="respuesta(1,this)"> Захватом всей Франции
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p1" onclick="respuesta(1,this)"> Победой Англии
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p1" onclick="respuesta(1,this)"> смертью Карла VI
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - Какая территория осталась во владении англииского короля после окончания Столетней войны?</h3>
+            <label>
+                <input type="radio"  value="1"  name="p2" onclick="respuesta(2,this)"> Орлеан
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p2" onclick="respuesta(2,this)"> Аквитания
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p2" onclick="respuesta(2,this)"> Порт Кале
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - Как звали монарха, который взошел на французский престол благодаря Жанне д’Арк?</h3>
+            <label>
+                <input type="radio"  value="1"  name="p3" onclick="respuesta(3,this)"> Карл VII
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p3" onclick="respuesta(3,this)"> Карл V
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p3" onclick="respuesta(3,this)"> Генрих V
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - В результате Столетней войны:</h3>
+            <label>
+                <input type="radio"  value="1"  name="p4" onclick="respuesta(4,this)"> Англия победила
+            </label>
+            <label>
+                <input type="radio"  value="2"  name="p4" onclick="respuesta(4,this)"> Франция одержала победу
+            </label>
+            <label>
+                <input type="radio"  value="3"  name="p4" onclick="respuesta(4,this)"> Была ничья
+            </label>
+        </section>
+
+        <button onclick="corregir()">ПРОВЕРИТЬ</button>
+        <h2>Ваши правильные ответы: <span id="resultado"></span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
